@@ -1,6 +1,6 @@
 package main.java.drools.service;
 
-import drools.model.SyracuseData;
+import main.java.drools.model.SyracuseData;
 
 import java.util.ArrayList;
 import java.util.List;

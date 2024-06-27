@@ -1,8 +1,0 @@
-com/adis/drools/Dt2Drl.class
-com/adis/drools/KogitoApplication.class
-com/adis/rules/tp/TestUnit.class
-com/adis/drools/CorsConfig.class
-com/adis/drools/RuleEventListenerConfig.class
-com/adis/drools/MyRuleRuntimeEventListener.class
-com/adis/drools/AgendaEventListenerConfig.class
-com/adis/drools/MyAgendaEventListener.class

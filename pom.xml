@@ -78,10 +78,10 @@
 		<module>questionnaire-AT-xom</module>
 		<module>questionnaire-AT-gui</module>
 		
-		<module>TP-1-rules</module>
-		<module>TP-2-rules</module>
-		<module>TP-3-rules</module>
-		<module>TP-Syracuse</module>
+		<!-- <module>TP-1-rules</module> -->
+		<!-- <module>TP-2-rules</module> -->
+		<!-- <module>TP-3-rules</module> -->
+		<!-- <module>TP-Syracuse</module> -->
 		
 	</modules>
 	

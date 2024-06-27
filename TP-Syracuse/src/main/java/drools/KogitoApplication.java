@@ -10,12 +10,12 @@ public class KogitoApplication {
         SpringApplication.run(KogitoApplication.class, args);
     }
 
-    @Bean
-    RuleEventListenerConfig newRuleEventListener() {
-        return new RuleEventListenerConfig();
-    }
-    @Bean
-    AgendaEventListenerConfig newAgendaEventListener() {
-    	return new AgendaEventListenerConfig();
-    }
+    // @Bean
+    // RuleEventListenerConfig newRuleEventListener() {
+    //     return new RuleEventListenerConfig();
+    // }
+    // @Bean
+    // AgendaEventListenerConfig newAgendaEventListener() {
+    // 	return new AgendaEventListenerConfig();
+    // }
 }
