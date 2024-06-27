@@ -1,0 +1,37 @@
+package com.adis.rules.tp
+unit TestUnit
+
+import com.adis.questionnaire.util.Util
+
+rule "print Hello World"
+    when
+    then
+        Util.debug("Hello World");
+end
+
+rule "Comparaison Date Nulle"
+    when
+        /contexte/demandeDePrestation[dateTraitement == null]
+    then
+        Util.debug("Date Nulle");
+end
+
+rule "Date < 27-Oct-2023"
+    when
+        /contexte/demandeDePrestation[dateTraitement <= "27-Oct-2023"]
+        // /contexte/demandeDePrestation[dateTraitement <= "2023-10-27"]
+    then
+        Util.debug("Date < 27-Oct-2023");
+end
+
+rule "Info adhésion"
+    when
+        $adhesion : /contexte/adhesions[numeroAdhesion != null && codeProduit != null]
+        // /contexte/adhesions[$code numeroAdhesion , $type codeProduit]
+        // $code : /contexte/adhesions[numeroAdhesion]
+        // $type : /contexte/adhesions[codeProduit]
+    then
+        // Util.debug($code, $type);
+        Util.debug("Adhésion Info: " + $adhesion.getNumeroAdhesion() + ", " + $adhesion.getCodeProduit());
+end
+

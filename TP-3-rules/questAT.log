@@ -1,0 +1,114 @@
+[2023-09-22 16:36:27,966] [StartupInfoLogger.java:55] [INFO ] Starting KogitoApplication using Java 17.0.3 on DESKTOP-C4TJF0B with PID 16396 (C:\Users\jlvassent\travail\AGIPI\FormationDrools\questionnaire-drools\TP-3-rules\target\classes started by jlvassent in C:\Users\jlvassent\travail\AGIPI\FormationDrools\questionnaire-drools\TP-3-rules)
+"[2023-09-22 16:36:27,982] [SpringApplication.java:640] [INFO ] No active profile set, falling back to 1 default profile: "default"
+"[2023-09-22 16:36:30,967] [TomcatWebServer.java:108] [INFO ] Tomcat initialized with port(s): 8080 (http)
+"[2023-09-22 16:36:31,453] [ServletWebServerApplicationContext.java:290] [INFO ] Root WebApplicationContext: initialization completed in 3386 ms
+"[2023-09-22 16:36:33,545] [WelcomePageHandlerMapping.java:53] [INFO ] Adding welcome page: class path resource [META-INF/resources/index.html]
+"[2023-09-22 16:36:35,637] [TomcatWebServer.java:220] [INFO ] Tomcat started on port(s): 8080 (http) with context path ''
+"[2023-09-22 16:36:35,651] [StartupInfoLogger.java:61] [INFO ] Started KogitoApplication in 8.211 seconds (JVM running for 9.831)
+"[2023-09-22 16:36:49,421] [FrameworkServlet.java:525] [INFO ] Initializing Servlet 'dispatcherServlet'
+"[2023-09-22 16:36:49,423] [FrameworkServlet.java:547] [INFO ] Completed initialization in 1 ms
+"[2023-09-22 16:36:49,785] [Util.java:11] [DEBUG] --------- Start Main ruleflow : Init ---------
+"[2023-09-22 16:36:49,961] [Util.java:11] [DEBUG] com.adis.rules.tp - Creation des Rubrique Etude
+"[2023-09-22 16:36:49,985] [Util.java:11] [DEBUG] com.adis.rules.tp - Ajout de la question sur le sport
+"[2023-09-22 16:36:49,996] [Util.java:11] [DEBUG] --------- Start Main ruleflow : Finit ---------
+"[2023-09-22 16:36:51,646] [Util.java:11] [DEBUG] --------- Start Main ruleflow : Init ---------
+"[2023-09-22 16:36:51,648] [Util.java:11] [DEBUG] com.adis.rules.tp - Creation des Rubrique Etude
+"[2023-09-22 16:36:51,650] [Util.java:11] [DEBUG] com.adis.rules.tp - Ajout de la question sur le sport
+"[2023-09-22 16:36:51,652] [Util.java:11] [DEBUG] com.adis.rules.tp - Question sport niveau 2 pour Accident_10
+"[2023-09-22 16:36:51,656] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_25
+"[2023-09-22 16:36:51,656] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_26
+"[2023-09-22 16:36:51,657] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_27
+"[2023-09-22 16:36:51,657] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_28
+"[2023-09-22 16:36:51,658] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_29
+"[2023-09-22 16:36:51,658] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_30
+"[2023-09-22 16:36:51,659] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_31
+"[2023-09-22 16:36:51,660] [Util.java:11] [DEBUG] --------- Start Main ruleflow : Finit ---------
+"[2023-09-22 16:36:52,699] [Util.java:11] [DEBUG] --------- Start Main ruleflow : Init ---------
+"[2023-09-22 16:36:52,700] [Util.java:11] [DEBUG] com.adis.rules.tp - Creation des Rubrique Etude
+"[2023-09-22 16:36:52,703] [Util.java:11] [DEBUG] com.adis.rules.tp - Ajout de la question sur le sport
+"[2023-09-22 16:36:52,704] [Util.java:11] [DEBUG] com.adis.rules.tp - Question sport niveau 2 pour Accident_10
+"[2023-09-22 16:36:52,705] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_25
+"[2023-09-22 16:36:52,706] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_26
+"[2023-09-22 16:36:52,706] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_27
+"[2023-09-22 16:36:52,706] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_28
+"[2023-09-22 16:36:52,707] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_29
+"[2023-09-22 16:36:52,707] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_30
+"[2023-09-22 16:36:52,708] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_31
+"[2023-09-22 16:36:52,708] [Util.java:11] [DEBUG] --------- Start Main ruleflow : Finit ---------
+"[2023-09-22 16:36:58,231] [Util.java:11] [DEBUG] --------- Start Main ruleflow : Init ---------
+"[2023-09-22 16:36:58,232] [Util.java:11] [DEBUG] com.adis.rules.tp - Creation des Rubrique Etude
+"[2023-09-22 16:36:58,234] [Util.java:11] [DEBUG] com.adis.rules.tp - Ajout de la question sur le sport
+"[2023-09-22 16:36:58,236] [Util.java:11] [DEBUG] --------- Start Main ruleflow : Finit ---------
+"[2023-09-22 16:36:59,774] [Util.java:11] [DEBUG] --------- Start Main ruleflow : Init ---------
+"[2023-09-22 16:36:59,776] [Util.java:11] [DEBUG] com.adis.rules.tp - Creation des Rubrique Etude
+"[2023-09-22 16:36:59,778] [Util.java:11] [DEBUG] com.adis.rules.tp - Ajout de la question sur le sport
+"[2023-09-22 16:36:59,779] [Util.java:11] [DEBUG] com.adis.rules.tp - Question sport niveau 2 pour Accident_10
+"[2023-09-22 16:36:59,780] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_25
+"[2023-09-22 16:36:59,781] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_26
+"[2023-09-22 16:36:59,782] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_27
+"[2023-09-22 16:36:59,782] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_28
+"[2023-09-22 16:36:59,782] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_29
+"[2023-09-22 16:36:59,783] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_30
+"[2023-09-22 16:36:59,783] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_31
+"[2023-09-22 16:36:59,784] [Util.java:11] [DEBUG] --------- Start Main ruleflow : Finit ---------
+"[2023-09-22 16:37:03,085] [Util.java:11] [DEBUG] --------- Start Main ruleflow : Init ---------
+"[2023-09-22 16:37:03,086] [Util.java:11] [DEBUG] com.adis.rules.tp - Creation des Rubrique Etude
+"[2023-09-22 16:37:03,088] [Util.java:11] [DEBUG] com.adis.rules.tp - Ajout de la question sur le sport
+"[2023-09-22 16:37:03,090] [Util.java:11] [DEBUG] com.adis.rules.tp - Question sport niveau 2 pour Accident_10
+"[2023-09-22 16:37:03,092] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_25
+"[2023-09-22 16:37:03,093] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_26
+"[2023-09-22 16:37:03,094] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_27
+"[2023-09-22 16:37:03,094] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_28
+"[2023-09-22 16:37:03,095] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_29
+"[2023-09-22 16:37:03,095] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_30
+"[2023-09-22 16:37:03,096] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_31
+"[2023-09-22 16:37:03,097] [Util.java:11] [DEBUG] --------- Start Main ruleflow : Finit ---------
+"[2023-09-22 16:50:08,758] [Util.java:11] [DEBUG] --------- Start Main ruleflow : Init ---------
+"[2023-09-22 16:50:08,760] [Util.java:11] [DEBUG] com.adis.rules.tp - Creation des Rubrique Etude
+"[2023-09-22 16:50:08,762] [Util.java:11] [DEBUG] com.adis.rules.tp - Ajout de la question sur le sport
+"[2023-09-22 16:50:08,763] [Util.java:11] [DEBUG] com.adis.rules.tp - Question sport niveau 2 pour Accident_16
+"[2023-09-22 16:50:08,766] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_84
+"[2023-09-22 16:50:08,767] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_85
+"[2023-09-22 16:50:08,767] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_86
+"[2023-09-22 16:50:08,767] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_87
+"[2023-09-22 16:50:08,768] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_88
+"[2023-09-22 16:50:08,768] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_89
+"[2023-09-22 16:50:08,769] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_90
+"[2023-09-22 16:50:08,769] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_91
+"[2023-09-22 16:50:08,769] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_92
+"[2023-09-22 16:50:08,770] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_93
+"[2023-09-22 16:50:08,770] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_94
+"[2023-09-22 16:50:08,770] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_95
+"[2023-09-22 16:50:08,771] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_96
+"[2023-09-22 16:50:08,772] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_97
+"[2023-09-22 16:50:08,772] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_98
+"[2023-09-22 16:50:08,773] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_99
+"[2023-09-22 16:50:08,773] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_100
+"[2023-09-22 16:50:08,773] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_101
+"[2023-09-22 16:50:08,774] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_102
+"[2023-09-22 16:50:08,774] [Util.java:11] [DEBUG] --------- Start Main ruleflow : Finit ---------
+"[2023-09-22 16:50:09,911] [Util.java:11] [DEBUG] --------- Start Main ruleflow : Init ---------
+"[2023-09-22 16:50:09,912] [Util.java:11] [DEBUG] com.adis.rules.tp - Creation des Rubrique Etude
+"[2023-09-22 16:50:09,914] [Util.java:11] [DEBUG] com.adis.rules.tp - Ajout de la question sur le sport
+"[2023-09-22 16:50:09,916] [Util.java:11] [DEBUG] com.adis.rules.tp - Question sport niveau 2 pour Accident_16
+"[2023-09-22 16:50:09,917] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_84
+"[2023-09-22 16:50:09,917] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_85
+"[2023-09-22 16:50:09,918] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_86
+"[2023-09-22 16:50:09,918] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_87
+"[2023-09-22 16:50:09,919] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_88
+"[2023-09-22 16:50:09,919] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_89
+"[2023-09-22 16:50:09,919] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_90
+"[2023-09-22 16:50:09,920] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_91
+"[2023-09-22 16:50:09,920] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_92
+"[2023-09-22 16:50:09,921] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_93
+"[2023-09-22 16:50:09,921] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_94
+"[2023-09-22 16:50:09,921] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_95
+"[2023-09-22 16:50:09,922] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_96
+"[2023-09-22 16:50:09,922] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_97
+"[2023-09-22 16:50:09,922] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_98
+"[2023-09-22 16:50:09,923] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_99
+"[2023-09-22 16:50:09,923] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_100
+"[2023-09-22 16:50:09,923] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_101
+"[2023-09-22 16:50:09,924] [Util.java:11] [DEBUG] com.adis.rules.tp - Reponse sport niveau 2 pour Accident_102
+"[2023-09-22 16:50:09,924] [Util.java:11] [DEBUG] --------- Start Main ruleflow : Finit ---------
+"

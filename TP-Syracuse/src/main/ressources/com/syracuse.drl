@@ -1,0 +1,15 @@
+package drools.ressources.com;
+
+import drools.model.SyracuseData;
+
+rule "Calculate Syracuse Sequence"
+when
+    $data : SyracuseData()
+then
+    SyracuseService service = new SyracuseService();
+    SyracuseData result = service.calculateSyracuseSequence($data.getStartValue());
+    $data.setSequence(result.getSequence());
+    $data.setFlightTime(result.getFlightTime());
+    $data.setFlightTimeInAltitude(result.getFlightTimeInAltitude());
+    $data.setMaxAltitude(result.getMaxAltitude());
+end

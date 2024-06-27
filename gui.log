@@ -1,0 +1,59 @@
+[2024-06-25 18:36:26,174] [Console.java:144] [INFO ] -------Etude
+"[2024-06-25 18:36:26,174] [Console.java:144] [INFO ]             Quel sport ? [CHOIX_UNIQUE_RADIO_NSP] *
+"[2024-06-25 18:36:26,174] [Console.java:144] [INFO ]                >Football/Rugby en tant que licencié(e)
+"[2024-06-25 18:36:26,174] [Console.java:144] [INFO ]                >Athlétisme
+"[2024-06-25 18:36:26,188] [Console.java:144] [INFO ]                >Arts Martiaux
+"[2024-06-25 18:36:26,188] [Console.java:144] [INFO ]                >Cyclisme
+"[2024-06-25 18:36:26,189] [Console.java:144] [INFO ]                >Equitation
+"[2024-06-25 18:36:26,189] [Console.java:144] [INFO ]                >Gymnastique
+"[2024-06-25 18:36:26,190] [Console.java:144] [INFO ]                >Sport collectif
+"[2024-06-25 18:36:26,191] [Console.java:144] [INFO ]                >Sport nautique
+"[2024-06-25 18:36:26,191] [Console.java:144] [INFO ]                >Sport de salle / fitness
+"[2024-06-25 18:36:26,193] [Console.java:144] [INFO ]                >Autre
+"[2024-06-25 18:36:26,198] [Console.java:144] [INFO ]                >NSP
+"[2024-06-25 18:36:31,963] [Console.java:144] [INFO ] -------Etude
+"[2024-06-25 18:36:31,965] [Console.java:144] [INFO ]             Quel sport ? [CHOIX_UNIQUE_RADIO_NSP] *
+"[2024-06-25 18:36:31,965] [Console.java:144] [INFO ]                >Football/Rugby en tant que licencié(e)
+"[2024-06-25 18:36:31,966] [Console.java:144] [INFO ]                >Athlétisme
+"[2024-06-25 18:36:31,966] [Console.java:144] [INFO ]                >Arts Martiaux
+"[2024-06-25 18:36:31,966] [Console.java:144] [INFO ]                >Cyclisme
+"[2024-06-25 18:36:31,966] [Console.java:144] [INFO ]                >Equitation
+"[2024-06-25 18:36:31,966] [Console.java:144] [INFO ]                >Gymnastique
+"[2024-06-25 18:36:31,966] [Console.java:144] [INFO ]                >Sport collectif
+"[2024-06-25 18:36:31,966] [Console.java:144] [INFO ]                >Sport nautique
+"[2024-06-25 18:36:31,966] [Console.java:144] [INFO ]                >Sport de salle / fitness
+"[2024-06-25 18:36:31,966] [Console.java:144] [INFO ]                >Autre
+"[2024-06-25 18:36:31,966] [Console.java:144] [INFO ]                >NSP
+"[2024-06-25 18:36:31,966] [Console.java:144] [INFO ]                 =>Arts Martiaux
+"[2024-06-25 18:36:31,966] [Console.java:151] [INFO ] ******************************** Le questionnaire est complet:  FIN DE QUESTIONNAIRE ************************
+"[2024-06-25 18:36:35,227] [Console.java:144] [INFO ] -------Etude
+"[2024-06-25 18:36:35,243] [Console.java:144] [INFO ]             Quel sport ? [CHOIX_UNIQUE_RADIO_NSP] *
+"[2024-06-25 18:36:35,244] [Console.java:144] [INFO ]                >Football/Rugby en tant que licencié(e)
+"[2024-06-25 18:36:35,244] [Console.java:144] [INFO ]                >Athlétisme
+"[2024-06-25 18:36:35,245] [Console.java:144] [INFO ]                >Arts Martiaux
+"[2024-06-25 18:36:35,245] [Console.java:144] [INFO ]                >Cyclisme
+"[2024-06-25 18:36:35,245] [Console.java:144] [INFO ]                >Equitation
+"[2024-06-25 18:36:35,245] [Console.java:144] [INFO ]                >Gymnastique
+"[2024-06-25 18:36:35,245] [Console.java:144] [INFO ]                >Sport collectif
+"[2024-06-25 18:36:35,245] [Console.java:144] [INFO ]                >Sport nautique
+"[2024-06-25 18:36:35,248] [Console.java:144] [INFO ]                >Sport de salle / fitness
+"[2024-06-25 18:36:35,249] [Console.java:144] [INFO ]                >Autre
+"[2024-06-25 18:36:35,249] [Console.java:144] [INFO ]                >NSP
+"[2024-06-25 18:36:35,249] [Console.java:144] [INFO ]                 =>Sport nautique
+"[2024-06-25 18:36:35,249] [Console.java:151] [INFO ] ******************************** Le questionnaire est complet:  FIN DE QUESTIONNAIRE ************************
+"[2024-06-25 18:36:36,515] [Console.java:144] [INFO ] -------Etude
+"[2024-06-25 18:36:36,515] [Console.java:144] [INFO ]             Quel sport ? [CHOIX_UNIQUE_RADIO_NSP] *
+"[2024-06-25 18:36:36,515] [Console.java:144] [INFO ]                >Football/Rugby en tant que licencié(e)
+"[2024-06-25 18:36:36,515] [Console.java:144] [INFO ]                >Athlétisme
+"[2024-06-25 18:36:36,515] [Console.java:144] [INFO ]                >Arts Martiaux
+"[2024-06-25 18:36:36,515] [Console.java:144] [INFO ]                >Cyclisme
+"[2024-06-25 18:36:36,515] [Console.java:144] [INFO ]                >Equitation
+"[2024-06-25 18:36:36,515] [Console.java:144] [INFO ]                >Gymnastique
+"[2024-06-25 18:36:36,515] [Console.java:144] [INFO ]                >Sport collectif
+"[2024-06-25 18:36:36,515] [Console.java:144] [INFO ]                >Sport nautique
+"[2024-06-25 18:36:36,515] [Console.java:144] [INFO ]                >Sport de salle / fitness
+"[2024-06-25 18:36:36,515] [Console.java:144] [INFO ]                >Autre
+"[2024-06-25 18:36:36,515] [Console.java:144] [INFO ]                >NSP
+"[2024-06-25 18:36:36,515] [Console.java:144] [INFO ]                 =>Gymnastique
+"[2024-06-25 18:36:36,515] [Console.java:151] [INFO ] ******************************** Le questionnaire est complet:  FIN DE QUESTIONNAIRE ************************
+"

@@ -1,0 +1,137 @@
+{
+  "demandeDePrestation" : {
+    "dateTraitement" : "2023-08-08",
+    "piecesJustificatives" : [ {
+      "type" : "CERFA_ARRET_TRAVAIL",
+      "dateTransmission" : "2023-09-08",
+      "dateDebutValidite" : null,
+      "datefinValidite" : null
+    }, {
+      "type" : "CERFA_ARRET_TRAVAIL",
+      "dateTransmission" : "2023-09-08",
+      "dateDebutValidite" : null,
+      "datefinValidite" : null
+    } ]
+  },
+  "assure" : {
+    "ageAnniversaire" : 49,
+    "ageMillesime" : 49,
+    "dateNaissance" : "1974-05-13",
+    "bonificationDisponible" : false
+  },
+  "adhesions" : [ {
+    "numeroAdhesion" : "0070045011",
+    "codeProduit" : "CAP",
+    "typeProduit" : "",
+    "generationContrat" : "G5",
+    "adresse" : {
+      "libelle" : "",
+      "id" : null
+    },
+    "dateFinPaiementCotisation" : null,
+    "dateFinDePret" : null,
+    "optionPsyDos" : true,
+    "presenceAdherent" : false,
+    "reassure" : false,
+    "estA2PS" : false,
+    "annexes" : [ {
+      "libelle" : null,
+      "code" : null
+    }, {
+      "libelle" : null,
+      "code" : null
+    }, {
+      "libelle" : null,
+      "code" : null
+    } ],
+    "nbJoursBonifies" : 0,
+    "garanties" : [ {
+      "type" : "IPR",
+      "numeroGarantie" : "",
+      "code" : "I1",
+      "nombreClasses" : 3,
+      "dateSouscription" : null,
+      "dateDerniereAugmentationRisque" : null,
+      "nombreJoursFranchiseMaladieSouscrite" : 30,
+      "nombreJoursFranchiseAccidentSouscrite" : 30,
+      "nombreJoursFranchiseHospitalisationSouscrite" : 30,
+      "nombreJoursFranchiseMaladieBonifies" : 0,
+      "nombreJoursFranchiseAccidentBonifies" : 0,
+      "nombreJoursFranchiseHospitalisationBonifies" : 0,
+      "typeFranchise" : "A",
+      "presenceCession" : false
+    } ]
+  }, {
+    "numeroAdhesion" : "0070052060",
+    "codeProduit" : "CAP",
+    "typeProduit" : "",
+    "generationContrat" : "G5",
+    "adresse" : {
+      "libelle" : "",
+      "id" : null
+    },
+    "dateFinPaiementCotisation" : null,
+    "dateFinDePret" : null,
+    "optionPsyDos" : false,
+    "presenceAdherent" : false,
+    "reassure" : true,
+    "estA2PS" : false,
+    "annexes" : [ {
+      "libelle" : null,
+      "code" : null
+    } ],
+    "nbJoursBonifies" : 0,
+    "garanties" : [ {
+      "type" : "IPR",
+      "numeroGarantie" : "",
+      "code" : "I1",
+      "nombreClasses" : 3,
+      "dateSouscription" : null,
+      "dateDerniereAugmentationRisque" : null,
+      "nombreJoursFranchiseMaladieSouscrite" : 90,
+      "nombreJoursFranchiseAccidentSouscrite" : 90,
+      "nombreJoursFranchiseHospitalisationSouscrite" : 90,
+      "nombreJoursFranchiseMaladieBonifies" : 0,
+      "nombreJoursFranchiseAccidentBonifies" : 0,
+      "nombreJoursFranchiseHospitalisationBonifies" : 0,
+      "typeFranchise" : "A",
+      "presenceCession" : false
+    } ]
+  }, {
+    "numeroAdhesion" : "0070760964",
+    "codeProduit" : "ARC",
+    "typeProduit" : "",
+    "generationContrat" : "G4",
+    "adresse" : {
+      "libelle" : "",
+      "id" : null
+    },
+    "dateFinPaiementCotisation" : null,
+    "dateFinDePret" : null,
+    "optionPsyDos" : false,
+    "presenceAdherent" : false,
+    "reassure" : true,
+    "estA2PS" : false,
+    "annexes" : [ {
+      "libelle" : null,
+      "code" : null
+    } ],
+    "nbJoursBonifies" : 0,
+    "garanties" : [ {
+      "type" : "RFP",
+      "numeroGarantie" : "",
+      "code" : "QL",
+      "nombreClasses" : 1,
+      "dateSouscription" : null,
+      "dateDerniereAugmentationRisque" : null,
+      "nombreJoursFranchiseMaladieSouscrite" : 90,
+      "nombreJoursFranchiseAccidentSouscrite" : 90,
+      "nombreJoursFranchiseHospitalisationSouscrite" : 90,
+      "nombreJoursFranchiseMaladieBonifies" : 0,
+      "nombreJoursFranchiseAccidentBonifies" : 0,
+      "nombreJoursFranchiseHospitalisationBonifies" : 0,
+      "typeFranchise" : "A",
+      "presenceCession" : false
+    } ]
+  } ]
+}

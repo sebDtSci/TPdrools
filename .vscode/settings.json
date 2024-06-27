@@ -1,0 +1,35 @@
+{
+    "java.compile.nullAnalysis.mode": "disabled",
+    "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx2G -Xms100m -Xlog:disable",
+    "java.autobuild.enabled":false,
+    "todo-tree.general.tagGroups": {
+        "FIXME": [
+            "FIXME",
+            "FIXIT",
+            "FIX",
+        ]
+    
+    },
+    "todo-tree.highlights.customHighlight": {
+        "TODO": {
+            "type": "text-and-comment",
+            "foreground": "#00FF00",
+        },
+        "FIXME": {
+            "background": "#800000",
+            "foreground": "#FFFF00",
+            "type": "text-and-comment",
+            "iconColour": "#FFFF00",
+            "gutterIcon": true
+        },
+        "HACK": {
+            "background": "#800000",
+            "foreground": "#FF00FF",
+            "type": "text-and-comment",
+            "iconColour": "#FF00FF",
+            "gutterIcon": true
+        }
+    },
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "java.dependency.packagePresentation": "hierarchical"
+}

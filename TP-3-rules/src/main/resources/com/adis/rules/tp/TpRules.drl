@@ -1,0 +1,44 @@
+package com.adis.rules.tp
+unit TestUnit
+
+rule "Creation des Rubrique Etude"
+	when
+		$questionnaire: /questionnaire
+	then
+		Rubrique $rETU = $questionnaire.ajouterRubrique(LibelleRubrique.ETUDE);
+		rubriques.add($rETU);
+end
+
+
+
+rule "Ajout de la question sur le sport"
+    when
+        $rubrique: /rubriques[libelle == LibelleRubrique.ETUDE];
+    then
+    	Question $question = $rubrique.ajouterQuestion(LibelleQuestion.Etude.SPORT, TypeQuestion.CHOIX_UNIQUE_RADIO);
+    	$question.ajouterReponseProposee(LibelleReponse.Sport.LISTE_CATEGORIES);
+    	$question.setReponseNeSaisPasPossible(true);
+        questions.add($question);	
+end
+
+rule "Ajout de la question sur le sport"
+    when
+        $rubrique: /rubriques[libelle == LibelleRubrique.ETUDE];
+    then
+    	Question $question = $rubrique.ajouterQuestion(LibelleQuestion.Etude.SPORT, TypeQuestion.CHOIX_UNIQUE_RADIO);
+    	$question.ajouterReponseProposee(LibelleReponse.Sport.LISTE_CATEGORIES);
+    	$question.setReponseNeSaisPasPossible(true);
+        questions.add($question);	
+end
+
+
+/*
+rule "Ajout de la Premiere question sur la la localisation de la pathologie "
+	when
+		$rubrique: /rubriques[libelle == LibelleRubrique.ETUDE]
+	then
+		Question $question = $rubrique.ajouterQuestion(LibelleQuestion.LocalisationPathologie.LOCALISATION, TypeQuestion.CHOIX_UNIQUE_RADIO);
+		$question.ajouterReponseProposee(LibelleReponse.LocalisationPathologie.LISTE);
+        questions.add($question);
+end
+*/

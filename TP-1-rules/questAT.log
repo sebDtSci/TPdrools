@@ -1,0 +1,32 @@
+[2024-03-07 14:04:28,531] [StartupInfoLogger.java:55] [INFO ] Starting KogitoApplication using Java 17.0.3 on DESKTOP-C4TJF0B with PID 22776 (C:\Users\jlvassent\travail\AGIPI\FormationDrools\questionnaire-drools - TP\TP-1-rules\target\classes started by jlvassent in C:\Users\jlvassent\travail\AGIPI\FormationDrools\questionnaire-drools - TP\TP-1-rules)
+"[2024-03-07 14:04:28,545] [SpringApplication.java:640] [INFO ] No active profile set, falling back to 1 default profile: "default"
+"[2024-03-07 14:04:31,233] [TomcatWebServer.java:108] [INFO ] Tomcat initialized with port(s): 8080 (http)
+"[2024-03-07 14:04:31,726] [ServletWebServerApplicationContext.java:290] [INFO ] Root WebApplicationContext: initialization completed in 3089 ms
+"[2024-03-07 14:04:33,269] [WelcomePageHandlerMapping.java:53] [INFO ] Adding welcome page: class path resource [META-INF/resources/index.html]
+"[2024-03-07 14:04:36,106] [TomcatWebServer.java:220] [INFO ] Tomcat started on port(s): 8080 (http) with context path ''
+"[2024-03-07 14:04:36,131] [StartupInfoLogger.java:61] [INFO ] Started KogitoApplication in 8.159 seconds (JVM running for 9.806)
+"[2024-03-07 14:04:39,971] [FrameworkServlet.java:525] [INFO ] Initializing Servlet 'dispatcherServlet'
+"[2024-03-07 14:04:39,972] [FrameworkServlet.java:547] [INFO ] Completed initialization in 1 ms
+"[2024-03-07 14:04:40,270] [Util.java:11] [DEBUG] --------- Main ruleflow : Init ---------
+"[2024-03-07 14:04:40,456] [Util.java:11] [DEBUG] --------- com.adis.rules.tp - Rule 1 - Hello world --------- 
+"[2024-03-07 14:04:40,456] [Util.java:11] [DEBUG] Hello world
+"[2024-03-07 14:04:40,460] [Util.java:11] [DEBUG] --------- com.adis.rules.tp - Rule 3 - Date traitement avant 27-Oct-2023 --------- 
+"[2024-03-07 14:04:40,460] [Util.java:11] [DEBUG] Date traitement avant 27-Oct-2023
+"[2024-03-07 14:04:40,461] [Util.java:11] [DEBUG] --------- com.adis.rules.tp - Rule 4 - Affichage info adhesion --------- 
+"[2024-03-07 14:04:40,464] [Util.java:11] [DEBUG] Adhesion 0070045011 - CAP garantie IPR
+"[2024-03-07 14:04:40,465] [Util.java:11] [DEBUG] --------- com.adis.rules.tp - Rule 4 - Affichage info adhesion --------- 
+"[2024-03-07 14:04:40,465] [Util.java:11] [DEBUG] Adhesion 0070052060 - CAP garantie IPR
+"[2024-03-07 14:04:40,465] [Util.java:11] [DEBUG] --------- com.adis.rules.tp - Rule 4 - Affichage info adhesion --------- 
+"[2024-03-07 14:04:40,467] [Util.java:11] [DEBUG] Adhesion 0070760964 - ARC garantie RFP
+"[2024-03-07 14:04:40,474] [Util.java:11] [DEBUG] --------- com.adis.rules.tp - Rule 5 - Comptage adhesion ARC et CAP --------- 
+"[2024-03-07 14:04:40,475] [Util.java:11] [DEBUG] Il y a 1 adhesion ARC 2 adhesion CAP
+"[2024-03-07 14:04:40,476] [Util.java:11] [DEBUG] --------- com.adis.rules.tp - Rule 6 - Creation des Rubriques --------- 
+"[2024-03-07 14:04:40,488] [Util.java:11] [DEBUG] --------- com.adis.rules.tp - Rule 7 - Ajout question reassurance si une des adhesions est reassuree --------- 
+"[2024-03-07 14:04:40,498] [Util.java:11] [DEBUG] --------- com.adis.rules.tp - Rule 8 - Ajout de la question salarie --------- 
+"[2024-03-07 14:04:40,501] [Util.java:11] [DEBUG] --------- com.adis.rules.tp - Rule 10 - Ajout question supplementaire si plusieurs pieces justificatives sont de type AT --------- 
+"[2024-03-07 14:04:40,504] [Util.java:11] [DEBUG] --------- com.adis.rules.tp - Rule 11 - Ajout question sur le type d'arret de travail --------- 
+"[2024-03-07 14:04:40,508] [Util.java:11] [DEBUG] --------- com.adis.rules.tp - Rule 12 - Ajout de la question sur le 1er niveau de localisation de la pathologie --------- 
+"[2024-03-07 14:04:40,518] [Util.java:11] [DEBUG] --------- com.adis.rules.tp - Rule 13 - Toutes les pieces sont des AT --------- 
+"[2024-03-07 14:04:40,519] [Util.java:11] [DEBUG] Toutes les PJ sont des AT.
+"[2024-03-07 14:04:40,523] [Util.java:11] [DEBUG] --------- Main ruleflow : Finit ---------
+"

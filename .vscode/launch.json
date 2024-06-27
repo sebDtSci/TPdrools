@@ -1,0 +1,48 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "TP-1",
+            "request": "launch",
+            "mainClass": "com.adis.drools.KogitoApplication",
+            "projectName": "TP-1-rules"
+        },
+        {
+            "type": "java",
+            "name": "TP-2",
+            "request": "launch",
+            "mainClass": "com.adis.drools.KogitoApplication",
+            "projectName": "TP-2-rules"
+        },
+        {
+            "type": "java",
+            "name": "TP-3",
+            "request": "launch",
+            "mainClass": "com.adis.drools.KogitoApplication",
+            "projectName": "TP-3-rules"
+        },        {
+            "type": "java",
+            "name": "Dt2Drl",
+            "request": "launch",
+            "mainClass": "com.adis.drools.Dt2Drl",
+            "projectName": "TP-3-rules"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "QuestionnaireGui",
+            "request": "launch",
+            "mainClass": "questionnaire_test.gui.QuestionnaireGui",
+            "projectName": "questionnaire-AT-gui"
+        }
+    ]
+}
