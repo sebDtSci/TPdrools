@@ -4,24 +4,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SyracuseData {
-    // private int startValue;
     private List<Integer> sequence;
     private int flightTime;
     private int flightTimeOnAltitude;
     private int maxAltitude;
 
     public SyracuseData(int startValue) {
-        // this.startValue = startValue;
         this.sequence = new ArrayList<>();
         this.flightTime = 0;
         this.flightTimeOnAltitude = 0;
         this.maxAltitude = 0;
     }
-
-    // Getters et Setters
-    // public int getStartValue() {
-    //     return startValue;
-    // }
 
     public List<Integer> getSequence() {
         return sequence;
