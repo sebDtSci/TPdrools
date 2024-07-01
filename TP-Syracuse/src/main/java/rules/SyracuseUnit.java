@@ -16,7 +16,7 @@ public class SyracuseUnit implements RuleUnitData {
     // private SingletonStore<Integer> maxAltitude;
 
     public SyracuseUnit() {
-        this.syracuseData = DataSource.createStore();
+        this.syracuseData = DataSource.createSingleton();
         this.startValue = DataSource.createSingleton();
 
         // this.sequence = DataSource.createSingleton();
@@ -24,7 +24,7 @@ public class SyracuseUnit implements RuleUnitData {
         // this.flightTimeOnAltitude = DataSource.createSingleton();
         // this.maxAltitude = DataSource.createSingleton();
     }
-
+    
 
     public void setStartValue(SingletonStore<Integer> startValue) {
         this.startValue = startValue;
@@ -34,10 +34,7 @@ public class SyracuseUnit implements RuleUnitData {
         return startValue;
     }
 
-    public SyracuseUnit(DataSource<SyracuseData> syracuseData) {
-        this.syracuseData = syracuseData;
-    }
-
+    
     public DataSource<SyracuseData> getSyracuseData() {
         return syracuseData;
     }
@@ -46,6 +43,10 @@ public class SyracuseUnit implements RuleUnitData {
         this.syracuseData = syracuseData;
     }
 }
+
+// public SyracuseUnit(DataSource<SyracuseData> syracuseData) {
+    //     this.syracuseData = syracuseData;
+    // }
 
 //     public SingletonStore<List<Integer>> getSequence() {
 //         return sequence;

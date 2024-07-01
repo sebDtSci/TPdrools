@@ -5,6 +5,15 @@ unit SyracuseUnit
 import drools.SyracuseData
 import java.util.List
 
+
+rule 'hello world' 
+    when 
+        
+    
+    then 
+        Util.debug("Hello World");
+
+
 rule 'InitializeSyracuseSequence' 
     when 
         $startValue : /startValue;
@@ -57,63 +66,3 @@ rule 'CalculateMetrics'
         $data.setMaxAltitude(maxAltitude);
         modify($data);
     
-
-
-
-
-
-// package rules
-// unit SyracuseUnit
-
-// import drools.model.SyracuseData;
-// import java.util.List;
-
-// rule "Initialize Syracuse Sequence"
-// when
-//     $data : SyracuseData(sequence.size() == 0)
-// then
-//     // Initialisation de la variable de séquence
-//     List<Integer> sequence = $data.getSequence();
-//     int currentValue = $data.getStartValue();
-//     sequence.add(currentValue);
-//     update($data);
-// end
-
-// rule "Calculate Next Syracuse Number"
-// when
-//     $data : SyracuseData(sequence.size() > 0)
-//     $currentValue : Integer() from $data.getSequence().get($data.getSequence().size() - 1)
-//     eval($currentValue != 1)
-// then
-//     // Calcul du prochain nombre de la suite de Syracuse
-//     int nextNumber = ($currentValue % 2 == 0) ? $currentValue / 2 : $currentValue * 3 + 1;
-//     $data.getSequence().add(nextNumber);
-//     update($data);
-// end
-
-// rule "Calculate Metrics"
-// when
-//     $data : SyracuseData(sequence.size() > 0)
-//     eval($data.getSequence().get($data.getSequence().size() - 1) == 1)
-// then
-//     List<Integer> sequence = $data.getSequence();
-//     int startValue = $data.getStartValue();
-//     int flightTime = sequence.size() - 1;
-//     int flightTimeOnAltitude = 0;
-//     int maxAltitude = 0;
-
-//     // Calcul des métriques
-//     for (int value : sequence) {
-//         if (value > startValue) {
-//             flightTimeOnAltitude++;
-//         }
-//         if (value > maxAltitude) {
-//             maxAltitude = value;
-//         }
-//     }
-
-//     $data.setFlightTime(flightTime);
-//     $data.setFlightTimeOnAltitude(flightTimeOnAltitude);
-//     $data.setMaxAltitude(maxAltitude);
-//     update($data);
-// end
