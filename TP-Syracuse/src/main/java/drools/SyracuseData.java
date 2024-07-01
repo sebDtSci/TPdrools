@@ -9,7 +9,7 @@ public class SyracuseData {
     private int flightTimeOnAltitude;
     private int maxAltitude;
 
-    public SyracuseData(int startValue) {
+    public SyracuseData() {
         this.sequence = new ArrayList<>();
         this.flightTime = 0;
         this.flightTimeOnAltitude = 0;
