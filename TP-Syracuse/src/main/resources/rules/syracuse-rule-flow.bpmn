@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn2:definitions xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" xmlns:xsi="xsi" id="_vBZ8QBnnED2UjZoqIqDjeg" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
+<bpmn2:definitions xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" xmlns:xsi="xsi" id="_Cw3ekBnqED2UjZoqIqDjeg" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
   <bpmn2:itemDefinition id="_startValueItem" structureRef="Integer"/>
   <bpmn2:itemDefinition id="_SyracuseDataItem" structureRef="drools.SyracuseData"/>
   <bpmn2:itemDefinition id="__B61C69D9-FE9F-4828-9AFB-E0F49A1356CE_fileNameInputXItem" structureRef="java.lang.String"/>
@@ -8,8 +8,8 @@
   <bpmn2:itemDefinition id="__B61C69D9-FE9F-4828-9AFB-E0F49A1356CE_decisionInputXItem" structureRef="java.lang.String"/>
   <bpmn2:itemDefinition id="__B61C69D9-FE9F-4828-9AFB-E0F49A1356CE_startValueInputXItem" structureRef="Integer"/>
   <bpmn2:itemDefinition id="__B61C69D9-FE9F-4828-9AFB-E0F49A1356CE_SyracuseDataOutputXItem" structureRef="drools.SyracuseData"/>
-  <bpmn2:collaboration id="_FEBBBD51-53AE-41F5-8D28-D6DF7383A1E6" name="Default Collaboration">
-    <bpmn2:participant id="_F96BEAA2-D9F8-48F7-8A04-85731810D97D" name="Pool Participant" processRef="SyracuseUnit"/>
+  <bpmn2:collaboration id="_AD6E4AD5-A0DA-4134-951C-A8436BE53555" name="Default Collaboration">
+    <bpmn2:participant id="_9C5D5CD9-B392-4E29-A4AA-64FB512C0FE1" name="Pool Participant" processRef="SyracuseUnit"/>
   </bpmn2:collaboration>
   <bpmn2:process id="SyracuseUnit" drools:packageName="rules" drools:version="1.0" drools:adHoc="false" name="syracuse-rule-flow" isExecutable="true" processType="Public">
     <bpmn2:extensionElements>
@@ -79,28 +79,28 @@
   <bpmndi:BPMNDiagram>
     <bpmndi:BPMNPlane bpmnElement="SyracuseUnit">
       <bpmndi:BPMNShape id="shape__7EA1A3EA-B681-4AF3-A3F4-0EA98E0728F2" bpmnElement="_7EA1A3EA-B681-4AF3-A3F4-0EA98E0728F2">
-        <dc:Bounds height="56" width="56" x="484" y="33"/>
+        <dc:Bounds height="56" width="56" x="690" y="111"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__B61C69D9-FE9F-4828-9AFB-E0F49A1356CE" bpmnElement="_B61C69D9-FE9F-4828-9AFB-E0F49A1356CE">
-        <dc:Bounds height="102" width="154" x="429" y="360"/>
+        <dc:Bounds height="102" width="154" x="635" y="438"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__D3E18C11-4D01-40D8-8E13-DD0FBCD991DB" bpmnElement="_D3E18C11-4D01-40D8-8E13-DD0FBCD991DB">
-        <dc:Bounds height="56" width="56" x="484" y="582"/>
+        <dc:Bounds height="56" width="56" x="690" y="660"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="shape__F6E7063F-FD4C-4BC6-B11F-33C51753DD33" bpmnElement="_F6E7063F-FD4C-4BC6-B11F-33C51753DD33">
-        <dc:Bounds height="102" width="154" x="429" y="199"/>
+        <dc:Bounds height="102" width="154" x="635" y="277"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="edge_shape__7EA1A3EA-B681-4AF3-A3F4-0EA98E0728F2_to_shape__F6E7063F-FD4C-4BC6-B11F-33C51753DD33" bpmnElement="_F1952272-A53E-4372-B2BD-EDCF16EF8622">
-        <di:waypoint x="512" y="61"/>
-        <di:waypoint x="506" y="199"/>
+        <di:waypoint x="718" y="139"/>
+        <di:waypoint x="712" y="277"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="edge_shape__F6E7063F-FD4C-4BC6-B11F-33C51753DD33_to_shape__B61C69D9-FE9F-4828-9AFB-E0F49A1356CE" bpmnElement="_18C4A4E6-FCEB-4530-9C61-81277C8F5F8A">
-        <di:waypoint x="506" y="250"/>
-        <di:waypoint x="506" y="360"/>
+        <di:waypoint x="712" y="328"/>
+        <di:waypoint x="712" y="438"/>
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="edge_shape__B61C69D9-FE9F-4828-9AFB-E0F49A1356CE_to_shape__D3E18C11-4D01-40D8-8E13-DD0FBCD991DB" bpmnElement="_D22181EC-082C-4FCA-8353-B07755C5E5AF">
-        <di:waypoint x="506" y="411"/>
-        <di:waypoint x="512" y="582"/>
+        <di:waypoint x="712" y="489"/>
+        <di:waypoint x="718" y="660"/>
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
@@ -159,7 +159,7 @@
         </bpsim:Scenario>
       </bpsim:BPSimData>
     </bpmn2:extensionElements>
-    <bpmn2:source>_vBZ8QBnnED2UjZoqIqDjeg</bpmn2:source>
-    <bpmn2:target>_vBZ8QBnnED2UjZoqIqDjeg</bpmn2:target>
+    <bpmn2:source>_Cw3ekBnqED2UjZoqIqDjeg</bpmn2:source>
+    <bpmn2:target>_Cw3ekBnqED2UjZoqIqDjeg</bpmn2:target>
   </bpmn2:relationship>
 </bpmn2:definitions>
