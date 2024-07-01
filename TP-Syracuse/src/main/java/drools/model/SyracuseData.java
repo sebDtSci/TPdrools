@@ -1,4 +1,4 @@
-package main.java.drools.model;
+package drools.model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,6 +25,9 @@ public class SyracuseData {
 
     public List<Integer> getSequence() {
         return sequence;
+    }
+    public void setSequence(List<Integer> sequence) {
+        this.sequence = sequence;
     }
 
     public int getFlightTime() {

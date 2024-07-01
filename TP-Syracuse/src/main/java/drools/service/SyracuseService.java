@@ -1,6 +1,6 @@
-package main.java.drools.service;
+package drools.service;
 
-import main.java.drools.model.SyracuseData;
+import drools.model.SyracuseData;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,8 +8,7 @@ import java.util.List;
 public class SyracuseService {
 
     public SyracuseData calculateSyracuseSequence(int startValue) {
-        SyracuseData syracuseData = new SyracuseData();
-        syracuseData.setStartValue(startValue);
+        SyracuseData syracuseData = new SyracuseData(startValue);
 
         List<Integer> sequence = new ArrayList<>();
         int current = startValue;
@@ -37,7 +36,7 @@ public class SyracuseService {
 
         syracuseData.setSequence(sequence);
         syracuseData.setFlightTime(flightTime);
-        syracuseData.setFlightTimeInAltitude(flightTimeInAltitude);
+        syracuseData.setFlightTimeOnAltitude(flightTimeInAltitude);
         syracuseData.setMaxAltitude(maxAltitude);
 
         return syracuseData;

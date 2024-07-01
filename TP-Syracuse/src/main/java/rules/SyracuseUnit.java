@@ -1,12 +1,11 @@
-package main.java.rules;
+package rules;
 
-// import org.kie.api.runtime.rule.RuleUnitData;
 import org.drools.ruleunits.api.RuleUnitData;
-import main.java.drools.model.SyracuseData;
+import drools.model.SyracuseData;
 import org.drools.ruleunits.api.DataSource;
 // import org.kie.api.runtime.rule.DataSource;
 
-public class SyracuseUnit implements RuleUnit {
+public class SyracuseUnit implements RuleUnitData {
     private DataSource<SyracuseData> syracuseData;
 
     public SyracuseUnit() {

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "KogitoApplication",
+            "request": "launch",
+            "mainClass": "drools.KogitoApplication",
+            "projectName": "syracuse-calculator"
+        },
+        {
+            "type": "java",
             "name": "TP-1",
             "request": "launch",
             "mainClass": "com.adis.drools.KogitoApplication",
@@ -24,7 +31,8 @@
             "request": "launch",
             "mainClass": "com.adis.drools.KogitoApplication",
             "projectName": "TP-3-rules"
-        },        {
+        },
+        {
             "type": "java",
             "name": "Dt2Drl",
             "request": "launch",
