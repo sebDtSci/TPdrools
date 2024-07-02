@@ -1,3 +1,10 @@
 [2024-07-02 15:42:48,465] [StartupInfoLogger.java:55] [INFO ] Starting KogitoApplication using Java 17.0.11 on PC-SAPHIRON with PID 492 (C:\Users\stadiello\Documents\TPdrools\TP-Syracuse\target\classes started by stadiello in C:\Users\stadiello\Documents\TPdrools)
 "[2024-07-02 15:42:48,481] [SpringApplication.java:640] [INFO ] No active profile set, falling back to 1 default profile: "default"
+"[2024-07-02 15:42:50,992] [TomcatWebServer.java:108] [INFO ] Tomcat initialized with port(s): 8080 (http)
+"[2024-07-02 15:42:51,424] [ServletWebServerApplicationContext.java:290] [INFO ] Root WebApplicationContext: initialization completed in 2819 ms
+"[2024-07-02 15:42:52,658] [WelcomePageHandlerMapping.java:53] [INFO ] Adding welcome page: class path resource [META-INF/resources/index.html]
+"[2024-07-02 15:42:54,358] [TomcatWebServer.java:220] [INFO ] Tomcat started on port(s): 8080 (http) with context path ''
+"[2024-07-02 15:42:54,359] [StartupInfoLogger.java:61] [INFO ] Started KogitoApplication in 6.443 seconds (JVM running for 9.715)
+"[2024-07-02 15:42:55,330] [FrameworkServlet.java:525] [INFO ] Initializing Servlet 'dispatcherServlet'
+"[2024-07-02 15:42:55,330] [FrameworkServlet.java:547] [INFO ] Completed initialization in 0 ms
 "
