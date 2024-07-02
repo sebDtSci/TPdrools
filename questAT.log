@@ -1,11 +1,10 @@
-[2024-07-02 11:35:09,358] [StartupInfoLogger.java:55] [INFO ] Starting KogitoApplication using Java 17.0.11 on PC-SAPHIRON with PID 4808 (C:\Users\stadiello\Documents\TPdrools\TP-Syracuse\target\classes started by stadiello in C:\Users\stadiello\Documents\TPdrools)
-"[2024-07-02 11:35:09,377] [SpringApplication.java:640] [INFO ] No active profile set, falling back to 1 default profile: "default"
-"[2024-07-02 11:35:12,227] [TomcatWebServer.java:108] [INFO ] Tomcat initialized with port(s): 8080 (http)
-"[2024-07-02 11:35:12,777] [ServletWebServerApplicationContext.java:290] [INFO ] Root WebApplicationContext: initialization completed in 3253 ms
-"[2024-07-02 11:35:13,983] [WelcomePageHandlerMapping.java:53] [INFO ] Adding welcome page: class path resource [META-INF/resources/index.html]
-"[2024-07-02 11:35:15,618] [TomcatWebServer.java:220] [INFO ] Tomcat started on port(s): 8080 (http) with context path ''
-"[2024-07-02 11:35:15,636] [StartupInfoLogger.java:61] [INFO ] Started KogitoApplication in 6.834 seconds (JVM running for 8.57)
-"[2024-07-02 11:35:23,866] [FrameworkServlet.java:525] [INFO ] Initializing Servlet 'dispatcherServlet'
-"[2024-07-02 11:35:23,868] [FrameworkServlet.java:547] [INFO ] Completed initialization in 1 ms
-"[2024-07-02 11:35:25,941] [AbstractOpenApiResource.java:398] [INFO ] Init duration for springdoc-openapi is: 473 ms
+[2024-07-02 14:27:22,832] [StartupInfoLogger.java:55] [INFO ] Starting KogitoApplication using Java 17.0.11 on PC-SAPHIRON with PID 5688 (C:\Users\stadiello\Documents\TPdrools\TP-Syracuse\target\classes started by stadiello in C:\Users\stadiello\Documents\TPdrools)
+"[2024-07-02 14:27:22,848] [SpringApplication.java:640] [INFO ] No active profile set, falling back to 1 default profile: "default"
+"[2024-07-02 14:27:25,338] [TomcatWebServer.java:108] [INFO ] Tomcat initialized with port(s): 8080 (http)
+"[2024-07-02 14:27:25,816] [ServletWebServerApplicationContext.java:290] [INFO ] Root WebApplicationContext: initialization completed in 2880 ms
+"[2024-07-02 14:27:27,233] [WelcomePageHandlerMapping.java:53] [INFO ] Adding welcome page: class path resource [META-INF/resources/index.html]
+"[2024-07-02 14:27:29,211] [TomcatWebServer.java:220] [INFO ] Tomcat started on port(s): 8080 (http) with context path ''
+"[2024-07-02 14:27:29,230] [StartupInfoLogger.java:61] [INFO ] Started KogitoApplication in 6.994 seconds (JVM running for 8.563)
+"[2024-07-02 14:28:03,644] [FrameworkServlet.java:525] [INFO ] Initializing Servlet 'dispatcherServlet'
+"[2024-07-02 14:28:03,646] [FrameworkServlet.java:547] [INFO ] Completed initialization in 1 ms
 "
