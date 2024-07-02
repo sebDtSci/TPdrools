@@ -1,19 +1,17 @@
 package rules;
 
 import org.drools.ruleunits.api.DataSource;
-import org.drools.ruleunits.api.DataStore;
 import org.drools.ruleunits.api.RuleUnitData;
 import org.drools.ruleunits.api.SingletonStore;
 
 import drools.SyracuseData;
 
 public class SyracuseUnit implements RuleUnitData {
-    // private DataSource<SyracuseData> syracuseData;
-    private DataStore<SyracuseData> syracuseData;
+    private SingletonStore<SyracuseData> syracuseData;
     private SingletonStore<Integer> startValue;
 
     public SyracuseUnit() {
-        this.syracuseData = DataSource.createStore();
+        this.syracuseData = DataSource.createSingleton();
         this.startValue = DataSource.createSingleton();
     }
 
@@ -25,12 +23,11 @@ public class SyracuseUnit implements RuleUnitData {
         return startValue;
     }
 
-    
-    public DataSource<SyracuseData> getSyracuseData() {
+    public SingletonStore<SyracuseData> getSyracuseData() {
         return syracuseData;
     }
 
-    public void setSyracuseData(DataStore<SyracuseData> syracuseData) {
+    public void setSyracuseData(SingletonStore<SyracuseData> syracuseData) {
         this.syracuseData = syracuseData;
     }
 }

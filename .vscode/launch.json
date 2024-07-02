@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "drools.Main",
+            "projectName": "syracuse-calculator"
+        },
+        {
+            "type": "java",
             "name": "KogitoApplication",
             "request": "launch",
             "mainClass": "drools.KogitoApplication",

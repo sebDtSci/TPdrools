@@ -1,19 +1,13 @@
 package drools;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class SyracuseData {
-    private List<Integer> sequence;
+    private List<Integer> sequence = new ArrayList<>();
     private int flightTime;
     private int flightTimeOnAltitude;
     private int maxAltitude;
-
-    // public SyracuseData() {
-    //     this.sequence = new ArrayList<>();
-    //     this.flightTime = 0;
-    //     this.flightTimeOnAltitude = 0;
-    //     this.maxAltitude = 0;
-    // }
 
     public List<Integer> getSequence() {
         return sequence;

@@ -7,7 +7,75 @@ import java.util.List
 import util.Util
 import java.util.ArrayList
 
-rule "Display All Variables"
+// rule "Init"
+//     when
+//     then
+//         System.out.println("--------- Start Main ruleflow : Init ---------");
+//         // syracuseData.set(new drools.SyracuseData());
+//         syracuseData.set(new drools.SyracuseUnit());
+// end
+
+// rule "Display All Variables"
+//     when 
+//         $startValue : /startValue
+//         $data : /syracuseData
+//     then 
+//         System.out.println("Start Value: " + $startValue);
+//         System.out.println("Sequence: " + $data.getSequence());
+//         System.out.println("Flight Time: " + $data.getFlightTime());
+//         System.out.println("Flight Time On Altitude: " + $data.getFlightTimeOnAltitude());
+//         System.out.println("Max Altitude: " + $data.getMaxAltitude());
+// end
+
+rule "InitializeSyracuseSequence"
+    when
+        $startValue : /startValue
+        $data : /syracuseData[sequence.isEmpty()]
+    then
+        List<Integer> sequence = new ArrayList<>();
+        sequence.add($startValue);
+        $data.setSequence(sequence);
+        update($data);
+        update($startValue);
+end
+
+rule "CalculateNextSyracuseNumber"
+    when
+        $data : /syracuseData[ sequence.size() > 0 ]
+        $currentValue : /syracuseData.sequence[ this == $data.sequence.get($data.sequence.size() - 1) ]
+        eval($currentValue != 1)
+    then
+        int nextNumber = ($currentValue % 2 == 0) ? $currentValue / 2 : $currentValue * 3 + 1;
+        $data.getSequence().add(nextNumber);
+        modify($data) { setSequence($data.getSequence()) };
+end
+
+rule "CalculateMetrics"
+    when
+        $data : /syracuseData[ sequence.size() > 0 && $data.getSequence().get($data.getSequence().size() - 1) == 1 ]
+        $startValue : /startValue
+    then
+        List<Integer> sequence = $data.getSequence();
+        int flightTime = sequence.size() - 1;
+        int flightTimeOnAltitude = 0;
+        int maxAltitude = 0;
+
+        for (int value : sequence) {
+            if (value > $startValue) {
+                flightTimeOnAltitude++;
+            }
+            if (value > maxAltitude) {
+                maxAltitude = value;
+            }
+        }
+
+        $data.setFlightTime(flightTime);
+        $data.setFlightTimeOnAltitude(flightTimeOnAltitude);
+        $data.setMaxAltitude(maxAltitude);
+        update($data);
+end
+
+rule "Display All Variables At The End Of The Ruleflow"
     when 
         $startValue : /startValue
         $data : /syracuseData
@@ -18,76 +86,3 @@ rule "Display All Variables"
         System.out.println("Flight Time On Altitude: " + $data.getFlightTimeOnAltitude());
         System.out.println("Max Altitude: " + $data.getMaxAltitude());
 end
-
-// rule "Hello World"
-//     when 
-//         $startValue : /startValue
-//         $datatest3 : /syracuseData
-//         // $datatest2 : /syracuseData[sequence.isEmpty()]
-//     then 
-//         System.out.println("Hello World");
-//         System.out.println($startValue);
-
-//         $datatest3.setMaxAltitude($startValue);
-
-        
-//         modify($datatest3) {setMaxAltitude($startValue)};
-        
-
-// end
-
-// rule "InitializeSyracuseSequence"
-//     when
-//         $startValue : /startValue
-//         $data : /syracuseData[sequence.isEmpty()]
-//         // $data : /syracuseData[maxAltitude ]
-//     then
-//         // System.out.println($startValue);
-//         // List<Integer> sequence = $data.getSequence();
-//         List<Integer> sequence = new ArrayList<>();
-//         sequence.add($startValue);
-//         $data.setSequence(sequence);
-//         // int currentValue = $startValue;
-//         // sequence.add(currentValue);
-//         // modify($data) { setSequence(sequence) };
-//         update($data);
-//         update($startValue);
-// end
-
-// rule "CalculateNextSyracuseNumber"
-//     when
-//         $data : /syracuseData[ sequence.size() > 0 ]
-//         $currentValue : /syracuseData.sequence[ this == $data.sequence.get($data.sequence.size() - 1) ]
-//         eval($currentValue != 1)
-//     then
-//         int nextNumber = ($currentValue % 2 == 0) ? $currentValue / 2 : $currentValue * 3 + 1;
-//         $data.getSequence().add(nextNumber);
-//         modify($data) { setSequence($data.getSequence()) };
-// end
-
-// rule "CalculateMetrics"
-//     when
-//         $data : /syracuseData[ sequence.size() > 0 && $data.getSequence().get($data.getSequence().size() - 1) == 1 ]
-//         $startValue : /startValue
-//     then
-//         List<Integer> sequence = $data.getSequence();
-//         // int startValue = $startValue;
-//         int flightTime = sequence.size() - 1;
-//         int flightTimeOnAltitude = 0;
-//         int maxAltitude = 0;
-
-//         for (int value : sequence) {
-//             if (value > $startValue) {
-//                 flightTimeOnAltitude++;
-//             }
-//             if (value > maxAltitude) {
-//                 maxAltitude = value;
-//             }
-//         }
-
-//         $data.setFlightTime(flightTime);
-//         $data.setFlightTimeOnAltitude(flightTimeOnAltitude);
-//         $data.setMaxAltitude(maxAltitude);
-//         // modify($data);
-//         update($data);
-// end

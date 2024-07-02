@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn2:definitions xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" xmlns:xsi="xsi" id="_rD9YkBqSED2RIuMT2_sxzA" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
+<bpmn2:definitions xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" xmlns:xsi="xsi" id="_B-8IwBqiED20bsYmOCEhqg" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
   <bpmn2:itemDefinition id="_startValueItem" structureRef="Integer"/>
   <bpmn2:itemDefinition id="_syracuseDataItem" structureRef="drools.SyracuseData"/>
   <bpmn2:itemDefinition id="__B61C69D9-FE9F-4828-9AFB-E0F49A1356CE_fileNameInputXItem" structureRef="java.lang.String"/>
@@ -7,11 +7,12 @@
   <bpmn2:itemDefinition id="__B61C69D9-FE9F-4828-9AFB-E0F49A1356CE_modelInputXItem" structureRef="java.lang.String"/>
   <bpmn2:itemDefinition id="__B61C69D9-FE9F-4828-9AFB-E0F49A1356CE_decisionInputXItem" structureRef="java.lang.String"/>
   <bpmn2:itemDefinition id="__B61C69D9-FE9F-4828-9AFB-E0F49A1356CE_startValueInputXItem" structureRef="Integer"/>
+  <bpmn2:itemDefinition id="__B61C69D9-FE9F-4828-9AFB-E0F49A1356CE_syracuseDataInputXItem" structureRef="drools.SyracuseData"/>
   <bpmn2:itemDefinition id="__B61C69D9-FE9F-4828-9AFB-E0F49A1356CE_syracuseDataOutputXItem" structureRef="drools.SyracuseData"/>
-  <bpmn2:collaboration id="_DF8443D5-3B3C-47BD-8230-6908CFB63FCF" name="Default Collaboration">
-    <bpmn2:participant id="_4A270E81-7F70-4D09-8D63-6FB51B0A05A3" name="Pool Participant" processRef="SyracuseUnit"/>
+  <bpmn2:collaboration id="_02035B81-5A2A-4DB8-95CE-A1CB50103A9C" name="Default Collaboration">
+    <bpmn2:participant id="_4615C829-6F85-4F97-98C5-1A97036BB34F" name="Pool Participant" processRef="Syracuse"/>
   </bpmn2:collaboration>
-  <bpmn2:process id="SyracuseUnit" drools:packageName="rules" drools:version="1.0" drools:adHoc="false" name="syracuse" isExecutable="true" processType="Public">
+  <bpmn2:process id="Syracuse" drools:packageName="rules" drools:version="1.0" drools:adHoc="false" name="syracuse" isExecutable="true" processType="Public">
     <bpmn2:extensionElements>
       <drools:import name="drools.SyracuseData"/>
       <drools:import name="java.util.Collection"/>
@@ -27,7 +28,7 @@
     <bpmn2:property id="syracuseData" itemSubjectRef="_syracuseDataItem" name="syracuseData">
       <bpmn2:extensionElements>
         <drools:metaData name="customTags">
-          <drools:metaValue><![CDATA[output]]></drools:metaValue>
+          <drools:metaValue><![CDATA[output,input]]></drools:metaValue>
         </drools:metaData>
       </bpmn2:extensionElements>
     </bpmn2:property>
@@ -62,9 +63,11 @@ kcontext.setVariable("syracuseData", new drools.SyracuseData());
       <bpmn2:outgoing>_D22181EC-082C-4FCA-8353-B07755C5E5AF</bpmn2:outgoing>
       <bpmn2:ioSpecification>
         <bpmn2:dataInput id="_B61C69D9-FE9F-4828-9AFB-E0F49A1356CE_startValueInputX" drools:dtype="Integer" itemSubjectRef="__B61C69D9-FE9F-4828-9AFB-E0F49A1356CE_startValueInputXItem" name="startValue"/>
+        <bpmn2:dataInput id="_B61C69D9-FE9F-4828-9AFB-E0F49A1356CE_syracuseDataInputX" drools:dtype="drools.SyracuseData" itemSubjectRef="__B61C69D9-FE9F-4828-9AFB-E0F49A1356CE_syracuseDataInputXItem" name="syracuseData"/>
         <bpmn2:dataOutput id="_B61C69D9-FE9F-4828-9AFB-E0F49A1356CE_syracuseDataOutputX" drools:dtype="drools.SyracuseData" itemSubjectRef="__B61C69D9-FE9F-4828-9AFB-E0F49A1356CE_syracuseDataOutputXItem" name="syracuseData"/>
         <bpmn2:inputSet>
           <bpmn2:dataInputRefs>_B61C69D9-FE9F-4828-9AFB-E0F49A1356CE_startValueInputX</bpmn2:dataInputRefs>
+          <bpmn2:dataInputRefs>_B61C69D9-FE9F-4828-9AFB-E0F49A1356CE_syracuseDataInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
         <bpmn2:outputSet>
           <bpmn2:dataOutputRefs>_B61C69D9-FE9F-4828-9AFB-E0F49A1356CE_syracuseDataOutputX</bpmn2:dataOutputRefs>
@@ -73,6 +76,10 @@ kcontext.setVariable("syracuseData", new drools.SyracuseData());
       <bpmn2:dataInputAssociation>
         <bpmn2:sourceRef>startValue</bpmn2:sourceRef>
         <bpmn2:targetRef>_B61C69D9-FE9F-4828-9AFB-E0F49A1356CE_startValueInputX</bpmn2:targetRef>
+      </bpmn2:dataInputAssociation>
+      <bpmn2:dataInputAssociation>
+        <bpmn2:sourceRef>syracuseData</bpmn2:sourceRef>
+        <bpmn2:targetRef>_B61C69D9-FE9F-4828-9AFB-E0F49A1356CE_syracuseDataInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
       <bpmn2:dataOutputAssociation>
         <bpmn2:sourceRef>_B61C69D9-FE9F-4828-9AFB-E0F49A1356CE_syracuseDataOutputX</bpmn2:sourceRef>
@@ -84,7 +91,7 @@ kcontext.setVariable("syracuseData", new drools.SyracuseData());
     </bpmn2:startEvent>
   </bpmn2:process>
   <bpmndi:BPMNDiagram>
-    <bpmndi:BPMNPlane bpmnElement="SyracuseUnit">
+    <bpmndi:BPMNPlane bpmnElement="Syracuse">
       <bpmndi:BPMNShape id="shape__7EA1A3EA-B681-4AF3-A3F4-0EA98E0728F2" bpmnElement="_7EA1A3EA-B681-4AF3-A3F4-0EA98E0728F2">
         <dc:Bounds height="56" width="56" x="369" y="184"/>
       </bpmndi:BPMNShape>
@@ -166,7 +173,7 @@ kcontext.setVariable("syracuseData", new drools.SyracuseData());
         </bpsim:Scenario>
       </bpsim:BPSimData>
     </bpmn2:extensionElements>
-    <bpmn2:source>_rD9YkBqSED2RIuMT2_sxzA</bpmn2:source>
-    <bpmn2:target>_rD9YkBqSED2RIuMT2_sxzA</bpmn2:target>
+    <bpmn2:source>_B-8IwBqiED20bsYmOCEhqg</bpmn2:source>
+    <bpmn2:target>_B-8IwBqiED20bsYmOCEhqg</bpmn2:target>
   </bpmn2:relationship>
 </bpmn2:definitions>
