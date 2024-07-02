@@ -31,7 +31,7 @@ rule 'InitializeSyracuseSequence'
 rule 'CalculateNextSyracuseNumber' 
     when 
         $data : /syracuseData[ sequence.size() > 0 ];
-        $currentValue : Integer() from $data.getSequence().get($data.getSequence().size() - 1);
+        $currentValue : $data.getSequence().get($data.getSequence().size() - 1)
         eval($currentValue != 1);
     
     then 
