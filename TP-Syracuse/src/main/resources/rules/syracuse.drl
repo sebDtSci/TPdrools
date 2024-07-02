@@ -5,55 +5,53 @@ unit SyracuseUnit
 import drools.SyracuseData
 import java.util.List
 
-
-rule 'hello world' 
+rule "Hello World"
     when 
-        
-    
+        // Add proper conditions if needed
     then 
-        Util.debug("Hello World");
+        System.out.println("Hello World");
+end
 
-
-rule 'InitializeSyracuseSequence' 
-    when 
+rule "InitializeSyracuseSequence"
+    when
         $startValue : /startValue;
         $data : /syracuseData[ sequence.size() == 0 ];
-    
-    then 
+    then
+        System.out.println($startValue);
+        System.out.println($data.getSequence());
         List<Integer> sequence = $data.getSequence();
         int currentValue = $startValue;
         sequence.add(currentValue);
-        modify($data);
-        modify($$startValue);
-    
+        // modify($data) { setSequence(sequence) };
+        update($data);
+        // modify($startValue);
+        update($startValue);
+end
 
-
-rule 'CalculateNextSyracuseNumber' 
-    when 
+rule "CalculateNextSyracuseNumber"
+    when
         $data : /syracuseData[ sequence.size() > 0 ];
-        $currentValue : $data.getSequence().get($data.getSequence().size() - 1)
+        $currentValue : /syracuseData.sequence[ this == $data.sequence.get($data.sequence.size() - 1) ]
         eval($currentValue != 1);
-    
-    then 
+    then
         int nextNumber = ($currentValue % 2 == 0) ? $currentValue / 2 : $currentValue * 3 + 1;
         $data.getSequence().add(nextNumber);
-        modify($data);
-    
+        modify($data) { setSequence($data.getSequence()) };
+end
 
-
-rule 'CalculateMetrics' 
-    when 
+rule "CalculateMetrics"
+    when
         $data : /syracuseData[ sequence.size() > 0 && $data.getSequence().get($data.getSequence().size() - 1) == 1 ];
         $startValue : /startValue;
-    then 
+    then
         List<Integer> sequence = $data.getSequence();
-        int startValue = $startValue;
+        // int startValue = $startValue;
         int flightTime = sequence.size() - 1;
         int flightTimeOnAltitude = 0;
         int maxAltitude = 0;
 
         for (int value : sequence) {
-            if (value > startValue) {
+            if (value > $startValue) {
                 flightTimeOnAltitude++;
             }
             if (value > maxAltitude) {
@@ -64,5 +62,6 @@ rule 'CalculateMetrics'
         $data.setFlightTime(flightTime);
         $data.setFlightTimeOnAltitude(flightTimeOnAltitude);
         $data.setMaxAltitude(maxAltitude);
-        modify($data);
-    
+        // modify($data);
+        update($data);
+end
